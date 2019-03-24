@@ -18,6 +18,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class TranslationServiceImpl implements TranslationService {
+
     private static final String urlString = "https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20190323T115427Z.08af0a3a8ef3f025.5e913fd5983617e32ce6ba3f11388c6829cfa738";
 
     @Autowired
