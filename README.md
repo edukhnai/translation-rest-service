@@ -1,21 +1,17 @@
-# TRANSLATION SERVICE
+## TRANSLATION SERVICE
 
 This application is a REST service based on Spring Boot that allows to translate text by using Yandex translator API.
-
+#### Build 
+Enter the following command in terminal from the unzipped project folder:
+`./gradlew build`
+#### Start 
+`gradle bootRun`
 #### Example of request
+Input parameters: 
+text = "Alf, hide in the kitchen", initial language = English, required language = Deutsch
 
-`POST /translate HTTP/1.1
-Host: localhost:8080
-Content-Type: application/json
-cache-control: no-cache
-Postman-Token: 7893fdbe-dae8-43d7-a814-6500caf2dbc1
-{
-"text" : "alf, hide in the kitchen",
-"from" : "en",
-"to" : "de"
-}`
+`curl -d '{"text" : "Alf, hide in the kitchen","from" : "en","to" : "de"}' -H "Content-Type: application/json" -X POST http://localhost:8080/translate
+`
 
 #### Result
-
-alf, ausblenden in die Küche
-
+Alf, ausblenden in die Küche
