@@ -13,10 +13,6 @@ public class RequestServiceImpl implements RequestService {
     @Autowired
     private RequestRepository requestRepository;
 
-    public RequestServiceImpl(RequestRepository requestRepository) {
-        this.requestRepository = requestRepository;
-    }
-
     @Override
     public void saveRequestData(String id, Date dateWithTime, String text, String fromLanguage, String toLanguage, String clientIp) {
         Request request = new Request(id, dateWithTime, text, fromLanguage, toLanguage, clientIp);
