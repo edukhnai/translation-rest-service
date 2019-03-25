@@ -12,7 +12,9 @@ import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ExecutionException;
+import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.TimeUnit;
@@ -35,14 +37,14 @@ public class TranslationServiceImpl implements TranslationService {
 
     @Override
     public String getTextTranslation(String text, String fromLanguage, String toLanguage) {
-        List<ScheduledFuture<String>> translatingTasks = new ArrayList<>();
+        List<Future<String>> translatingTasks = new ArrayList<>();
         StringBuilder translatedText = new StringBuilder();
 
-        ScheduledExecutorService executorService = Executors.newScheduledThreadPool(5);
+        ExecutorService executorService = Executors.newFixedThreadPool(5);
 
         for (String word : textUtil.getWords(text)) {
 
-            translatingTasks.add(executorService.schedule(() -> {
+            translatingTasks.add(executorService.submit(() -> {
                 try {
                     URL urlObject = new URL(urlString);
                     HttpsURLConnection connection = (HttpsURLConnection) urlObject.openConnection();
@@ -61,12 +63,12 @@ public class TranslationServiceImpl implements TranslationService {
 
                 } catch (IOException e) {
                     logger.error("Error during translating input/output", e);
-                    return "";
+                    return "error";
                 }
-            }, 1, TimeUnit.MICROSECONDS));
+            }));
         }
 
-        for (ScheduledFuture<String> future : translatingTasks) {
+        for (Future<String> future : translatingTasks) {
             try {
                 translatedText.append(future.get()).append(" ");
 
