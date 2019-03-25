@@ -1,8 +1,8 @@
 ## TRANSLATION SERVICE
 
 This application is a REST service based on Spring Boot that allows to translate text by using Yandex translator API.
-###Requirements
-Installed and chosen Java version 1.8
+### Requirements
+Default Java version 1.8
 #### Build 
 Enter the following command in terminal from the unzipped project folder:
  

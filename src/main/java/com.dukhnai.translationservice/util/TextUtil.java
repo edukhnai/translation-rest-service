@@ -18,7 +18,7 @@ public class TextUtil {
         return sb.toString();
     }
 
-    public String[] getParts(String text) {
+    public String[] getWords(String text) {
         return text.split("\\s+");
     }
 

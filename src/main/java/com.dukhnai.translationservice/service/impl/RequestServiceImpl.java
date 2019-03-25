@@ -18,8 +18,8 @@ public class RequestServiceImpl implements RequestService {
     }
 
     @Override
-    public void saveRequestData(String id, Date dateWithTime, String text, String from, String to, String clientIp) {
-        Request request = new Request(id, dateWithTime, text, from, to, clientIp);
+    public void saveRequestData(String id, Date dateWithTime, String text, String fromLanguage, String toLanguage, String clientIp) {
+        Request request = new Request(id, dateWithTime, text, fromLanguage, toLanguage, clientIp);
         requestRepository.add(request);
     }
 }

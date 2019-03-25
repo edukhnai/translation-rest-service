@@ -12,7 +12,7 @@ class TranslatedText {
         return result.toString().trim();
     }
 
-    void add(String text) {
+    synchronized void add(String text) {
         result.append(text).append(" ");
     }
 }

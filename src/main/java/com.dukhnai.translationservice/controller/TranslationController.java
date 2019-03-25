@@ -5,6 +5,8 @@ import com.dukhnai.translationservice.exception.TranslationException;
 import com.dukhnai.translationservice.service.ServiceLocator;
 import java.util.Date;
 import java.util.UUID;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import javax.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -16,6 +18,8 @@ public class TranslationController {
 
     @Autowired
     private ServiceLocator serviceLocator;
+
+    private final Logger logger = LogManager.getLogger(TranslationController.class);
 
     @PostMapping(value = "/translate")
     public String processTextTranslation(@RequestBody TextForTranslation textForTranslation, HttpServletRequest request) {
@@ -36,7 +40,7 @@ public class TranslationController {
                     textForTranslation.getTo());
 
         } catch (TranslationException e) {
-            e.printStackTrace();
+            logger.error(e);
             result = "error";
         }
 
