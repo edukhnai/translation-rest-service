@@ -29,11 +29,10 @@ Application response: Alf, ausblenden in die Küche
 All requests are stored in in-memory H2 database. When application is running, you can see all requests
 in H2 console:
 1) Type http://localhost:8080/h2-console in browser address bar
-2) Set required parameters like using this screenshot:
-![img](/home/kate/IdeaProjects/translation-rest-service/src/main/resources/img/IGERoPosDLA.jpg)
+2) Set required parameters like here:
+![img](https://pp.userapi.com/c854324/v854324059/ef34/IGERoPosDLA.jpg)
 3) Type the following command to see all service requests:
-
-![img](/home/kate/IdeaProjects/translation-rest-service/src/main/resources/img/wxXp-3MDCYA.jpg)
+![img](https://pp.userapi.com/c847120/v847120381/1cef4f/wxXp-3MDCYA.jpg)
 
 
 
