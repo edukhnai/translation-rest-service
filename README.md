@@ -2,14 +2,14 @@
 
 This application is a REST service based on Spring Boot that allows to translate text by using Yandex translator API.
 ### Requirements
-Default Java version 1.8
+Default Jdk version 1.8
 #### Build 
-Enter the following command in terminal from the unzipped project folder:
+Enter the following command in terminal from the project folder:
  
 * Linux:`./gradlew build` 
 * Windows: `gradlew.bat`
 #### Start 
-* Linux:`gradle bootRun`
+* Linux:`./gradlew bootRun` 
 * Windows: `gradlew bootRun`
 #### Example of request
 Input parameters: 

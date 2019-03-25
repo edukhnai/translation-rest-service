@@ -22,7 +22,7 @@ public class TextUtil {
         return text.split("\\s+");
     }
 
-    public String getJoinedTranslationParameters(String textForTranslation, String fromLanguage, String toLanguage) throws UnsupportedEncodingException {
+    public String getJoinedTranslationRequestParameters(String textForTranslation, String fromLanguage, String toLanguage) throws UnsupportedEncodingException {
         return "text=" + URLEncoder.encode(textForTranslation, "UTF-8") + "&lang=" + fromLanguage + "-" + toLanguage;
     }
 }
