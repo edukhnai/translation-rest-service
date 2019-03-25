@@ -34,6 +34,7 @@ in H2 console:
 ![img](https://pp.userapi.com/c854324/v854324059/ef34/IGERoPosDLA.jpg)
 3) Type the following command to see all service requests:
 
+
 ![img](https://pp.userapi.com/c847120/v847120381/1cef4f/wxXp-3MDCYA.jpg)
 
 
