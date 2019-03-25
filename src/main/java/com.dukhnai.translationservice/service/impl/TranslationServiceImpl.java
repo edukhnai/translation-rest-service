@@ -15,9 +15,6 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
-import java.util.concurrent.ScheduledExecutorService;
-import java.util.concurrent.ScheduledFuture;
-import java.util.concurrent.TimeUnit;
 import javax.net.ssl.HttpsURLConnection;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -68,9 +65,9 @@ public class TranslationServiceImpl implements TranslationService {
             }));
         }
 
-        for (Future<String> future : translatingTasks) {
+        for (Future<String> taskResult : translatingTasks) {
             try {
-                translatedText.append(future.get()).append(" ");
+                translatedText.append(taskResult.get()).append(" ");
 
             } catch (InterruptedException | ExecutionException e) {
                 logger.error(e);
