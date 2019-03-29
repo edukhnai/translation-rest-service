@@ -16,8 +16,11 @@ public class TranslationController {
     @Autowired
     private ServiceLocator serviceLocator;
 
+    @Autowired
+    private HttpServletRequest request;
+
     @PostMapping(value = "/translate")
-    public String processTextTranslation(@RequestBody TextForTranslation textForTranslation, HttpServletRequest request) {
+    public String processTextTranslation(@RequestBody TextForTranslation textForTranslation) {
 
         serviceLocator.getRequestService().saveRequestData(
                 UUID.randomUUID().toString(),

@@ -10,7 +10,6 @@ import org.springframework.stereotype.Component;
 
 @Component
 @Getter
-@Setter
 public class ServiceLocatorImpl implements ServiceLocator {
 
     @Autowired

@@ -4,8 +4,11 @@ import com.dukhnai.translationservice.entity.Request;
 import com.dukhnai.translationservice.repository.RequestRepository;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Timestamp;
+import java.util.Date;
+import java.util.Optional;
 import javax.sql.DataSource;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -44,6 +47,34 @@ public class RequestRepositoryImpl implements RequestRepository {
 
         } catch (SQLException e) {
             logger.error(e);
+        }
+    }
+
+    @Override
+    public Optional<Request> getById(String id) {
+        try (Connection connection = dataSource.getConnection();
+             PreparedStatement statement = connection.prepareStatement("select * from request where id = ?")) {
+
+            statement.setString(1, id);
+
+            ResultSet resultSet = statement.executeQuery();
+
+            Request request = null;
+            while(resultSet.next()) {
+                request = new Request(
+                        resultSet.getString(1),
+                        new Date(resultSet.getTimestamp(2).getTime()),
+                        resultSet.getString(3),
+                        resultSet.getString(4),
+                        resultSet.getString(5),
+                        resultSet.getString(6)
+                );
+            }
+            return Optional.ofNullable(request);
+
+        } catch (SQLException e) {
+            logger.error(e);
+            return Optional.empty();
         }
     }
 

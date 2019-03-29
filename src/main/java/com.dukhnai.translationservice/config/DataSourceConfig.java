@@ -13,8 +13,12 @@ import org.springframework.jdbc.datasource.DriverManagerDataSource;
 @PropertySource("classpath:application.properties")
 public class DataSourceConfig {
 
-    @Autowired
     private Environment environment;
+
+    @Autowired
+    public DataSourceConfig(Environment environment) {
+        this.environment = environment;
+    }
 
     @Bean
     public DataSource dataSource() {
