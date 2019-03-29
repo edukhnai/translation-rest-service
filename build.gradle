@@ -22,8 +22,11 @@ repositories {
     mavenCentral()
 }
 
-test {
-    useJUnitPlatform()
+jacocoTestReport {
+    reports {
+        xml.enabled true
+        html.enabled true
+    }
 }
 
 sourceCompatibility = 1.8

@@ -1,5 +1,8 @@
 ## TRANSLATION SERVICE
 
+[![Build Status](https://travis-ci.com/katedukhnai/translation-rest-service.svg?branch=master)](https://travis-ci.com/katedukhnai/translation-rest-service)
+[![codecov](https://codecov.io/gh/katedukhnai/translation-rest-service/branch/master/graph/badge.svg)](https://codecov.io/gh/katedukhnai/translation-rest-service)
+
 This application is a REST service based on Spring Boot that allows to translate text by using Yandex translator API.
 ### Requirements
 Default Jdk version 1.8

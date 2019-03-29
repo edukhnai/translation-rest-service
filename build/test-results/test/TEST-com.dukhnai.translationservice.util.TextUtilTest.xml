@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.dukhnai.translationservice.util.TextUtilTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-03-29T22:06:09" hostname="kate" time="0.002">
+  <properties/>
+  <testcase name="shouldSplitArrayOfStringsWhenTextWithSpacesIsPassed" classname="com.dukhnai.translationservice.util.TextUtilTest" time="0.002"/>
+  <testcase name="shouldGetTextFromReaderWhenReaderWithContentIsPassed" classname="com.dukhnai.translationservice.util.TextUtilTest" time="0.0"/>
+  <testcase name="shouldCreateStringWithGivenParametersWhenRequestParametersArePassed" classname="com.dukhnai.translationservice.util.TextUtilTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

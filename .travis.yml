@@ -2,9 +2,12 @@ sudo: false
 
 language: java
 jdk:
-  - openjdk11
+  - openjdk8
 os:
   - linux
+
+before_install:
+  - pip install --user codecov
 
 after_success:
 - bash <(curl -s https://codecov.io/bash)
