@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.dukhnai.translationservice.config.DataSourceConfigTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-03-29T22:06:10" hostname="kate" time="0.363">
-  <properties/>
-  <testcase name="shouldReturnDataSourceInstanceWhenMethodCalled" classname="com.dukhnai.translationservice.config.DataSourceConfigTest" time="0.363"/>
-  <system-out><![CDATA[2019-03-30 01:06:11.135  INFO 21830 --- [    Test worker] o.s.j.d.DriverManagerDataSource          : Loaded JDBC driver: org.h2.Driver
-]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
