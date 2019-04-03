@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1b4e4f2-7d1b-43c4-a0af-9b6c99b55a48" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com.dukhnai.translationservice/TranslationApplicationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4.1/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4.1/taskHistory/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4.1/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4.1/taskHistory/taskHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -29,7 +20,7 @@
     <SUITE FILE_PATH="coverage/translation_rest_service$TranslationApplication.ic" NAME="TranslationApplication Coverage Results" MODIFIED="1553889516965" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/translation_rest_service$All_in_translation_rest_service_test__2_.ic" NAME="All in translation-rest-service.test (2) Coverage Results" MODIFIED="1554311846526" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/translation_rest_service$All_in_translation_rest_service_test__1_.ic" NAME="All in translation-rest-service.test (1) Coverage Results" MODIFIED="1554309581465" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/translation_rest_service$All_in_translation_rest_service_test.ic" NAME="All in translation-rest-service.test Coverage Results" MODIFIED="1554313104971" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/translation_rest_service$All_in_translation_rest_service_test.ic" NAME="All in translation-rest-service.test Coverage Results" MODIFIED="1554318527966" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/translation_rest_service$All_in_translation_rest_service_test__5_.ic" NAME="All in translation-rest-service.test (5) Coverage Results" MODIFIED="1554308211692" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="CoverageViewManager">
@@ -56,15 +47,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com.dukhnai.translationservice/TranslationApplicationTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            <state relative-caret-position="186">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#424#425#0" expanded="true" />
-                <element signature="e#483#484#0" expanded="true" />
+                <element signature="e#416#417#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com.dukhnai.translationservice/DataSourceConfigTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="93">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -79,6 +81,15 @@
                 <element signature="imports" expanded="true" />
                 <element signature="e#340#341#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.travis.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -121,7 +132,6 @@
         <option value="$PROJECT_DIR$/src/test/java/com.dukhnai.translationservice/DataSourceConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com.dukhnai.translationservice/exception/RequestDoesNotPresentException.java" />
         <option value="$PROJECT_DIR$/src/test/java/com.dukhnai.translationservice/util/TextUtilTest.java" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/java/com.dukhnai.translationservice/exception/RepositoryException.java" />
         <option value="$PROJECT_DIR$/src/main/java/com.dukhnai.translationservice/repository/RequestRepository.java" />
@@ -140,9 +150,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com.dukhnai.translationservice/service/impl/RequestServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com.dukhnai.translationservice/service/impl/ServiceLocatorImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com.dukhnai.translationservice/entity/Request.java" />
-        <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/test/java/com.dukhnai.translationservice/TranslationApplicationTest.java" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/.travis.yml" />
       </list>
     </option>
   </component>
@@ -172,7 +183,33 @@
             <path>
               <item name="translation-rest-service" type="b2602c69:ProjectViewProjectNode" />
               <item name="translation-rest-service" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="translation-rest-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="translation-rest-service" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="translation-rest-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="translation-rest-service" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="translation-rest-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="translation-rest-service" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="translation-rest-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="translation-rest-service" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com.dukhnai.translationservice" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="translation-rest-service" type="b2602c69:ProjectViewProjectNode" />
@@ -212,7 +249,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554313102757" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554319171374" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -345,26 +382,11 @@
       <workItem from="1553861380146" duration="1325000" />
       <workItem from="1553884213970" duration="14230000" />
       <workItem from="1554197866104" duration="19000" />
-      <workItem from="1554299708641" duration="9319000" />
+      <workItem from="1554299708641" duration="11142000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_translation-rest-service_test - 2019.04.03 at 19h 20m 35s.xml">
-      <configuration name="All in translation-rest-service.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_translation-rest-service_test - 2019.04.03 at 19h 21m 47s.xml">
-      <configuration name="All in translation-rest-service.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_translation-rest-service_test_(1) - 2019.04.03 at 19h 39m 50s.xml">
-      <configuration name="All in translation-rest-service.test (1)" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_translation-rest-service_test_(2) - 2019.04.03 at 20h 17m 35s.xml">
-      <configuration name="All in translation-rest-service.test (2)" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TranslationApplicationTest - 2019.04.03 at 20h 18m 29s.xml">
-      <configuration name="TranslationApplicationTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TranslationApplicationTest - 2019.04.03 at 20h 20m 31s.xml">
       <configuration name="TranslationApplicationTest" configurationId="JUnit" />
     </history-entry>
@@ -380,9 +402,24 @@
     <history-entry file="All_in_translation-rest-service_test_(3) - 2019.04.03 at 20h 30m 10s.xml">
       <configuration name="All in translation-rest-service.test (3)" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TranslationApplicationTest - 2019.04.03 at 20h 36m 32s.xml">
+      <configuration name="TranslationApplicationTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_translation-rest-service_test - 2019.04.03 at 20h 36m 51s.xml">
+      <configuration name="All in translation-rest-service.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_translation-rest-service_test - 2019.04.03 at 20h 37m 27s.xml">
+      <configuration name="All in translation-rest-service.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_translation-rest-service_test - 2019.04.03 at 20h 38m 35s.xml">
+      <configuration name="All in translation-rest-service.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_translation-rest-service_test - 2019.04.03 at 22h 08m 58s.xml">
+      <configuration name="All in translation-rest-service.test" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="129384000" />
+    <option name="totallyTimeSpent" value="131207000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -395,9 +432,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1044" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3221154" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3221154" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -407,7 +443,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49732906" weight="0.32821077" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.7724359" visible="true" weight="0.5993414" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7724359" visible="true" weight="0.28869376" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.74786323" weight="0.42477876" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -416,7 +452,7 @@
       <window_info anchor="bottom" id="Spring" order="8" sideWeight="0.49839744" weight="0.32821077" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49626067" weight="0.3435785" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.2275641" side_tool="true" visible="true" weight="0.5993414" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.2275641" side_tool="true" visible="true" weight="0.28869376" />
       <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49412394" weight="0.30515915" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="14" sideWeight="0.49946582" weight="0.32930845" />
@@ -557,16 +593,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com.dukhnai.translationservice/DataSourceConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com.dukhnai.translationservice/util/TextUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -601,16 +627,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="390">
-            <caret line="26" selection-start-line="26" selection-end-line="26" />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
@@ -738,13 +754,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lombok.config">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="42" selection-start-column="42" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com.dukhnai.translationservice/service/impl/RequestServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
@@ -825,17 +834,48 @@
         <state relative-caret-position="-2790" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.travis.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
           <caret line="26" column="45" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com.dukhnai.translationservice/DataSourceConfigTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com.dukhnai.translationservice/TranslationApplicationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#416#417#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="150">
+            <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lombok.config">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="42" selection-start-column="42" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -850,15 +890,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com.dukhnai.translationservice/TranslationApplicationTest.java">
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#424#425#0" expanded="true" />
-            <element signature="e#483#484#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="105">
+          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
         </state>
       </provider>
     </entry>
