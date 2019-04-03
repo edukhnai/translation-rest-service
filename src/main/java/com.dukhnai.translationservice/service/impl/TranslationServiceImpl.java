@@ -1,5 +1,6 @@
 package com.dukhnai.translationservice.service.impl;
 
+import com.dukhnai.translationservice.exception.ConnectionEstablishingException;
 import com.dukhnai.translationservice.service.TranslationService;
 import com.dukhnai.translationservice.util.TextUtil;
 import java.io.BufferedReader;
@@ -16,8 +17,6 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 import javax.net.ssl.HttpsURLConnection;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -30,10 +29,8 @@ public class TranslationServiceImpl implements TranslationService {
     @Autowired
     private TextUtil textUtil;
 
-    private final Logger logger = LogManager.getLogger(TranslationServiceImpl.class);
-
     @Override
-    public String getTextTranslation(String text, String fromLanguage, String toLanguage) {
+    public String getTextTranslation(String text, String fromLanguage, String toLanguage) throws ConnectionEstablishingException {
         List<Future<String>> translatingTasks = new ArrayList<>();
         StringBuilder translatedText = new StringBuilder();
 
@@ -59,8 +56,7 @@ public class TranslationServiceImpl implements TranslationService {
                     return (String) jsonObject.getJSONArray("text").get(0);
 
                 } catch (IOException e) {
-                    logger.error("Error during translating input/output", e);
-                    return "error";
+                    throw new ConnectionEstablishingException(e.getMessage());
                 }
             }));
         }
@@ -70,7 +66,7 @@ public class TranslationServiceImpl implements TranslationService {
                 translatedText.append(taskResult.get()).append(" ");
 
             } catch (InterruptedException | ExecutionException e) {
-                logger.error(e);
+                throw new ConnectionEstablishingException(e.getMessage());
             }
         }
 

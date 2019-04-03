@@ -36,7 +36,7 @@ public class RequestServiceImplTest {
     }
 
     @Test(expected = RequestDoesNotPresentException.class)
-    public void shouldThrowWhenRequestIsNotStored() throws RequestDoesNotPresentException {
+    public void shouldThrowWhenRequestIsNotStored() throws Exception {
         String notExistingId = UUID.randomUUID().toString();
 
         Request foundRequest = requestService.getById(notExistingId);

@@ -1,6 +1,7 @@
 package com.dukhnai.translationservice.repository.impl;
 
 import com.dukhnai.translationservice.entity.Request;
+import com.dukhnai.translationservice.exception.RepositoryException;
 import com.dukhnai.translationservice.repository.RequestRepository;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -10,15 +11,11 @@ import java.sql.Timestamp;
 import java.util.Date;
 import java.util.Optional;
 import javax.sql.DataSource;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 @Repository
 public class RequestRepositoryImpl implements RequestRepository {
-
-    private final Logger logger = LogManager.getLogger(RequestRepositoryImpl.class);
 
     @Autowired
     private DataSource dataSource;
@@ -26,7 +23,7 @@ public class RequestRepositoryImpl implements RequestRepository {
     private boolean requestTableCreated = false;
 
     @Override
-    public void add(Request request) {
+    public void add(Request request) throws RepositoryException {
 
         if (!requestTableCreated) {
             createRequestTable();
@@ -46,12 +43,12 @@ public class RequestRepositoryImpl implements RequestRepository {
             statement.executeUpdate();
 
         } catch (SQLException e) {
-            logger.error(e);
+            throw new RepositoryException(e.getMessage());
         }
     }
 
     @Override
-    public Optional<Request> getById(String id) {
+    public Optional<Request> getById(String id) throws RepositoryException {
         try (Connection connection = dataSource.getConnection();
              PreparedStatement statement = connection.prepareStatement("select * from request where id = ?")) {
 
@@ -73,12 +70,11 @@ public class RequestRepositoryImpl implements RequestRepository {
             return Optional.ofNullable(request);
 
         } catch (SQLException e) {
-            logger.error(e);
-            return Optional.empty();
+            throw new RepositoryException(e.getMessage());
         }
     }
 
-    private void createRequestTable() {
+    private void createRequestTable() throws RepositoryException {
         try (Connection connection = dataSource.getConnection();
              PreparedStatement createTableStatement = connection.prepareStatement(
                      "create table if not exists request(id char(36), dateTime timestamp, text varchar(2000)," +
@@ -87,7 +83,7 @@ public class RequestRepositoryImpl implements RequestRepository {
             createTableStatement.executeUpdate();
 
         } catch (SQLException e) {
-            logger.error(e);
+            throw new RepositoryException(e.getMessage());
         }
     }
 }

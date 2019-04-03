@@ -1,5 +1,6 @@
 package com.dukhnai.translationservice.service.impl;
 
+import com.dukhnai.translationservice.exception.ConnectionEstablishingException;
 import com.dukhnai.translationservice.service.TranslationService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -17,7 +18,7 @@ public class TranslationServiceTest {
     private TranslationService translationService;
 
     @Test
-    public void shouldReturnTextTranslationWhenTextIsPassed() {
+    public void shouldReturnTextTranslationWhenTextIsPassed() throws ConnectionEstablishingException {
         String text = "cat dog";
         String fromLanguage = "en";
         String toLanguage = "ru";

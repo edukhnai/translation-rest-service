@@ -22,7 +22,7 @@ public class RequestRepositoryImplTest {
     private RequestRepository requestRepository;
 
     @Test
-    public void shouldFindSavedRequestWhenRequestIsPersisted() {
+    public void shouldFindSavedRequestWhenRequestIsPersisted() throws Exception {
         Request originalRequest = new Request(UUID.randomUUID().toString(), new Date(), "cat dog", "en", "ru", "1.2.3.4.5");
 
         requestRepository.add(originalRequest);
