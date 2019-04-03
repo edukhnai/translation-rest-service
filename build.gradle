@@ -24,7 +24,7 @@ repositories {
 
 jacoco {
     toolVersion = "0.8.3"
-    reportsDir = file("$buildDir/customJacocoReportDir")
+    reportsDir = file("$buildDir/jacocoReport")
 }
 
 jacocoTestReport {
